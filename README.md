@@ -47,11 +47,16 @@ Mettre une image docker dans un pod avec la commande "minikube image load guestb
 
 ## 3. Déployer le guestbook (Deployment + Service)
 
+Utiliser un deployment pour relancer les pods automatiquement en cas de problème.
+
 ### Problème rencontré et pourquoi il est survenu
+J'ai eu un peu de mal à trouver comment supprimer un seul des pods.
 
 ### Solution appliquée et pourquoi cette solution fonctionne
+kubectl delete -n guestbook pods guestbook-deployment-648ffd7944-82dsv ça va bien chercher dans le namespace guestbook et le pod dont le nom précis est celui là.
 
 ### Ce que j'ai appris
+Créer un deployment.yaml, cibler un pod dans un déploiement pour le supprimer.
 
 ---
 
