@@ -32,11 +32,16 @@ Créer des namespaces et afficher les détails.
 
 ## 2. Déployer le guestbook (Pod)
 
+Mettre une image docker dans un pod.
+
 ### Problème rencontré et pourquoi il est survenu
+Image non trouvée, impossible de l'ajouter. Oublié le port, suppression pour refaire.
 
 ### Solution appliquée et pourquoi cette solution fonctionne
+Il fallait lancer le processus de Docker pour qu'il trouve l'image. Commande "kubectl delete -f pod.yaml".
 
 ### Ce que j'ai appris
+Mettre une image docker dans un pod avec la commande "minikube image load guestbook:v0.1.0" et avec le yaml. Supprimer un pod.
 
 ---
 
