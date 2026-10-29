@@ -1,7 +1,8 @@
 ## Commandes utilisées
 
-### Deployer le service
+### Deployer
 kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
 
 ### Forwarder les ports
 kubectl port-forward -n guestbook deployments/guestbook-deployment 3000:3000

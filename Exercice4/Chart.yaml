@@ -1,0 +1,7 @@
+apiVersion: v2
+name: guestbook
+description: Chart Helm pour deployer l'application Guestbook
+
+type: application
+version: 0.1.0
+appVersion: "0.1.0"

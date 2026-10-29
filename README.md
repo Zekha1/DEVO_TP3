@@ -62,11 +62,16 @@ Créer un deployment.yaml, cibler un pod dans un déploiement pour le supprimer.
 
 ## 4. Déployer le guestbook (Helm Chart)
 
+Utiliser Helm pour installer le chart et paramétrer le déploiement.
+
 ### Problème rencontré et pourquoi il est survenu
+Erreur dans les noms à cause de l'exercice 3.
 
 ### Solution appliquée et pourquoi cette solution fonctionne
+Suppression des ressources de l'exo 3 avant l'exo 4.
 
 ### Ce que j'ai appris
+Créer un chart Helm et modifier le nombre de replicas avec "helm upgrade".
 
 ---
 
