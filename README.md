@@ -77,11 +77,19 @@ Créer un chart Helm et modifier le nombre de replicas avec "helm upgrade".
 
 ## 5. Ajouter une base de données (Redis)
 
+Déployer Redis dans le namespace "data" et connecter le guestbook à Redis. Conserver les données.
+
 ### Problème rencontré et pourquoi il est survenu
+Le guestbook et Redis sont dans deux namespaces différents.
 
 ### Solution appliquée et pourquoi cette solution fonctionne
+Création d'un Deployment Redis, d'un Service redis et d'un PVC pour garder
+les données. Le guestbook utilise une ConfigMap contenant l'adresse
+"redis.data.svc.cluster.local".
 
 ### Ce que j'ai appris
+Déployer Redis, utiliser un Service entre deux namespaces et conserver les
+données avec un PVC.
 
 ---
 
