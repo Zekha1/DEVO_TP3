@@ -110,15 +110,18 @@ redémarre le pod uniquement si l'application ne répond plus.
 
 ---
 
-en +
-
 ## 7. Exposer le guestbook avec un Ingress
 
+Utiliser un Ingress pour accéder au guestbook sans `port-forward`.
+
 ### Problème rencontré et pourquoi il est survenu
+Aucun problème.
 
 ### Solution appliquée et pourquoi cette solution fonctionne
+NA
 
 ### Ce que j'ai appris
+L'Ingress reçoit les requêtes HTTP et les transmet au Service puis aux pods.
 
 ---
 

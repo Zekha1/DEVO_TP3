@@ -1,0 +1,13 @@
+replicaCount: 3
+
+image: guestbook:v0.1.0
+
+service:
+  type: ClusterIP
+  port: 3000
+
+redisHost: redis.data.svc.cluster.local
+
+ingress:
+  enabled: true
+  host: guestbook.local
