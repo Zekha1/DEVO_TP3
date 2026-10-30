@@ -1,16 +1,5 @@
 ## Commandes utilisees
 
-### Deployer Redis
-kubectl create namespace
-kubectl apply -f redis-deployment.yaml
-kubectl apply -f redis-service.yaml
-
-### Deployer le guestbook
-helm lint .
-helm upgrade --install guestbook . \
-	--namespace guestbook \
-	--create-namespace
-
 ### Tester sans Redis
 kubectl scale deployment/redis -n data --replicas=0
 kubectl get pods -n guestbook
