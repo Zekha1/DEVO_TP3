@@ -95,11 +95,18 @@ données avec un PVC.
 
 ## 6. Rendre l'application robuste avec les probes
 
+Ajouter des probes pour vérifier que l'application fonctionne et peut recevoir
+du trafic.
+
 ### Problème rencontré et pourquoi il est survenu
+Aucun problème.
 
 ### Solution appliquée et pourquoi cette solution fonctionne
+NA
 
 ### Ce que j'ai appris
+La readiness retire un pod du Service sans le redémarrer. La liveness
+redémarre le pod uniquement si l'application ne répond plus.
 
 ---
 
